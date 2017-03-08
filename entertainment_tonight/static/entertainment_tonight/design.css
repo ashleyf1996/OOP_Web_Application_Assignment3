@@ -1,7 +1,11 @@
 body
 {
    background: mediumpurple url("images/backg.jpg" );
+}
+.container{
+   background-color: deeppink;
+}
 
-
-
+.h1{
+   colour: pink;
 }
