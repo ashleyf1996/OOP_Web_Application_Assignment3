@@ -12,10 +12,15 @@
 </head>
 
 <body>
-
+   <div>
+        {% load staticfiles %}
+    <img src="{% static "entertainment_tonight/images/logo.png" %}"  width=100; alt="ET logo" align="left"/>
+</div>
     <div class="container">
+
         <div class="panel panel-default">
   <div class="panel-body"><!--navigation bar-->
+
                     <nav class="navbar navbar-default">
 
                         <!--list of sections on the navigation bar-->
@@ -53,8 +58,7 @@
         <!--Jumbotron puts a shodow around the text-->
         <div class="jumbotron">
             <p>Entertainment Tonight</p>
-            {% load staticfiles %}
-    <img src="{% static "entertainment_tonight/images/logo.png" %}"  width=120px; alt="ET logo"/>
+
             <form class="form-inline" role="search" method="get" action="#">
                 <div class="form-group">
                     <!--save in var called f-->
