@@ -12,11 +12,13 @@ html {
 }
 
 body {
+
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #333;
-    background-color: purple;
+    color: pink;
+    background-image: url("/static/entertainment_tonight/images/logo.png") ;
+
 }
 article,
 aside,
@@ -5550,6 +5552,7 @@ button.list-group-item-danger.active:hover {
 
     padding: 15px;
     padding-bottom: 0px;
+
 
 }
 .panel-heading {
