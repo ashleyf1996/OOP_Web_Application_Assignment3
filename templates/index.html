@@ -12,6 +12,14 @@
 </head>
 
 <body>
+    <ul>
+        {% for cities in all_cities %}
+        <li><a href="/entertainment_tonight/{{ cities.id }}"> {{ cities.town_name }}</a></li>
+        {% endfor %}
+    </ul>
+
+
+
    <div>
         {% load staticfiles %}
     <img src="{% static "entertainment_tonight/images/logo.png" %}" height=60; width=50; alt="ET logo" align="left"/>

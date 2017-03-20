@@ -1,19 +1,27 @@
-from django.http import HttpResponse
-from django.template import loader
+from django.http import Http404
+from django.shortcuts import render
 from .models import Cities
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
 def index(request):
-    template = loader.get_template('index.html')
-    html = ''
     all_cities = Cities.objects.all()
-    for city in all_cities:
-        url = '/entertainment_tonight/' + str(city.id) + '/'
-        html += '<a href="' + url +'">' + city.town_name + '</a> <br>'
-    return HttpResponse(template.render(request), html)
+    return render(request, 'index.html', {'all_cities': all_cities})
 
 
 def detail(request, cities_id):
-    return HttpResponse("<h2>Details for city id: "+ str(cities_id) + "</h2>")
+    try:
+        city = Cities.objects.get(pk=cities_id)
+    except Cities.DoesNotExist:
+        raise Http404("Sorry error!!")
+    return render(request, 'detail.html', {'city': city})
+
+
+class CitiesCreate(CreateView):
+    model = Cities
+    fields = ['town_name']
+
+
+
 
 

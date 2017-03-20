@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.core.urlresolvers import reverse
 
 # here are all of my models
 
@@ -10,6 +10,10 @@ class Cities(models.Model):
     # this function filters out what it to be printed. Puts it into a string
     def __str__(self):
         return self.town_name
+
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'pk': self.pk})
+
 
 
 
