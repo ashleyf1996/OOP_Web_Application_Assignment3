@@ -1,6 +1,7 @@
 from django.http import Http404
 from django.shortcuts import render
 from .models import Cities
+from .models import Event
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
@@ -16,10 +17,14 @@ def detail(request, cities_id):
         raise Http404("Sorry error!!")
     return render(request, 'detail.html', {'city': city})
 
+# inherit from create view
 
-class CitiesCreate(CreateView):
-    model = Cities
-    fields = ['town_name']
+
+class EventCreate(CreateView):
+
+    # trying to create a new event
+    model = Event
+    fields = ['event_name', 'event_location', 'event_type']
 
 
 
