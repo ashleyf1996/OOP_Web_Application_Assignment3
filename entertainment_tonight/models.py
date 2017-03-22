@@ -11,9 +11,6 @@ class Cities(models.Model):
     def __str__(self):
         return self.town_name
 
-    def get_absolute_url(self):
-        return reverse('detail', kwargs={'pk': self.pk})
-
 
 class Event(models.Model):
     event_name = models.CharField(max_length=200)
@@ -22,7 +19,7 @@ class Event(models.Model):
 
     #when we create new event, it adds it to db and gives it id. go to detail view
     def get_absolute_url(self):
-        return reverse('detail', kwargs={'id': self.pk})
+        return reverse('detail', kwargs={'pk': self.pk})
 
-
-
+    def __str__(self):
+        return self.event_name

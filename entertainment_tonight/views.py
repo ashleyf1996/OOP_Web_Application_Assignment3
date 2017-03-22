@@ -1,30 +1,38 @@
-from django.http import Http404
+
 from django.shortcuts import render
-from .models import Cities
+from django.views import generic
+from django.views.generic.edit import CreateView
+from .forms import CreateEventForm
 from .models import Event
-from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 
 def index(request):
-    all_cities = Cities.objects.all()
-    return render(request, 'index.html', {'all_cities': all_cities})
+    all_events = Event.objects.all()
+    return render(request, 'index.html', {'all_events': all_events})
 
 
-def detail(request, cities_id):
-    try:
-        city = Cities.objects.get(pk=cities_id)
-    except Cities.DoesNotExist:
-        raise Http404("Sorry error!!")
-    return render(request, 'detail.html', {'city': city})
-
-# inherit from create view
+class DetailView(generic.DeleteView):
+    model = Event
+    template_name = 'detail.html'
 
 
 class EventCreate(CreateView):
-
-    # trying to create a new event
     model = Event
-    fields = ['event_name', 'event_location', 'event_type']
+    fields = ['event_name', 'event_type', 'event_location']
+
+def home(request):
+    form = CreateEventForm()
+    context = {
+        "form": form
+    }
+    return render(request, 'event_form.html',context)
+
+
+
+
+
+
+
 
 
 
