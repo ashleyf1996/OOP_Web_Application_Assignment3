@@ -20,12 +20,13 @@ class EventCreate(CreateView):
     model = Event
     fields = ['event_name', 'event_type', 'event_location']
 
+
 def home(request):
     form = CreateEventForm()
     context = {
         "form": form
     }
-    return render(request, 'event_form.html',context)
+    return render(request, 'event_form.html', context)
 
 
 
