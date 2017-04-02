@@ -29,7 +29,8 @@ def home(request):
     return render(request, 'event_form.html', context)
 
 
-
+def login(request):
+        return render(request,'event_form.html')
 
 
 
