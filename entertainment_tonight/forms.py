@@ -7,3 +7,4 @@ class CreateEventForm(forms.ModelForm):
         model = Event
         fields = ['event_name', 'event_location', 'event_type', 'upload_photo']
 
+
