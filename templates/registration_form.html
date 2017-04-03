@@ -6,18 +6,18 @@
             <div class="col-sm-12 col-md-7">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <h3> register </h3>
+                        <h3> Create a new account! </h3>
                        <form class="form-horizontal" role="form" action="index.html" method="post">
                             {% csrf_token %}
                            <div class="form-group">
                                <div class="col-sm-offset-2 col-sm-10">
-                                            <p>username</p>
+                                            <p>Username</p>
                                         <input id="username" name="username"
                                    type="text" class="form-control"><br><br>
-                                   <p>password</p>
+                                   <p>Password</p>
                                        <input id="password" name="password"
                                               type="password" class="form-control"/></div><br>
-                               <p>email</p>
+                               <p>Email</p>
                                 <input id="email" name="email"
                                               type="text" class="form-control"/></div><br><br>
                                    <button type="submit" class="btn btn-success">Submit</button>

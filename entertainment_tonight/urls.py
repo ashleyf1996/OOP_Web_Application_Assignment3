@@ -9,8 +9,8 @@ urlpatterns = [
 
     url(r'^create/$', views.home, name='create'),
     url(r'login/$', views.login, name='login'),
-    url(r'^register/$', views.UserFormView.as_view(), name='index'),
-    url(r'^register/index.html$', views.index, name='register')
+    url(r'^register/$', views.UserFormView.as_view(), name='register'),
+
 
 
 ]
