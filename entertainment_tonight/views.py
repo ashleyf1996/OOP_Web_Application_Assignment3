@@ -1,7 +1,6 @@
-
+from django.contrib import messages
 from django.shortcuts import render,redirect
-from django.contrib.auth import authenticate, login
-from django.views import generic
+from django.contrib.auth import authenticate, login, logout
 from django.views.generic.edit import CreateView
 from .forms import CreateEventForm
 from .models import Event
@@ -9,6 +8,7 @@ from django.views.generic import View
 from django.views import generic
 from .forms import UserForm
 from django.http import HttpResponse
+
 
 def index(request):
     all_events = Event.objects.all()
@@ -31,6 +31,17 @@ def home(request):
         "form": form
     }
     return render(request, 'event_form.html', context)
+
+
+class Logout(View):
+
+    def get(self, request):
+        # Log the user out. If they are logged in
+        if request.user.is_authenticated:
+            # Log them out
+            logout(request)
+            messages.success(request, "You have now been logged out, Danke :)!")
+            return redirect('index')
 
 
 class UserFormView(View):
@@ -70,12 +81,32 @@ class UserFormView(View):
                 if user.is_active:
 
                     login(request, user)
-                    html = "<html><body>hi</body></html>"
-                    return HttpResponse(html)
+                    messages.success(request, "You have registered successfully and are now logged in.")
+                    return redirect('index')
 
         return render(request, self.template_name, {'form': form})
 
 
+class Login(View):
+
+    def get(self, request):
+        return render(request, 'login.html')
+
+    def post(self, request):
+        username = request.POST['username']
+        password = request.POST['password']
+
+        # Authenticate the user
+        user = authenticate(username=username, password=password)
+
+        # If the user is authenticated
+        if user is not None:
+            login(request, user)
+            messages.success(request, '%s you are now logged in.' % username)
+            return redirect('index')
+        else:
+            messages.warning(request, 'Invalid username or password')
+            return redirect('login')
 
 
 
