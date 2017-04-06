@@ -9,10 +9,12 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <h1>Tell use where you are! We want to know what events you have found!</h1>
-        <form >
+        <form action="" method="post">
             {{ form }}
-        </form>
-        <br><br>
+            <button type="submit" class="btn btn-success">Submit</button>
+            {% csrf_token %}
+        </form><br>
+
     </div>
 </div>
 {% include 'footer.html' %}

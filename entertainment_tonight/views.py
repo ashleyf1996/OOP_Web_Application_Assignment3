@@ -11,8 +11,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    all_events = Event.objects.all()
-    return render(request, 'index.html', {'all_events': all_events})
+    context = {
+        'events': Event.objects.all()
+    }
+    return render(request, 'index.html', context)
 
 
 class DetailView(generic.DeleteView):
@@ -29,6 +31,7 @@ class CreateEvent(View):
 
     def get(self, request):
 
+        # this filters out who can make an event
         if request.user.is_authenticated():
             form = CreateEventForm()
             context = {
@@ -36,9 +39,26 @@ class CreateEvent(View):
             }
             return render(request, 'event_form.html', context)
         else:
-            messages.warning(request, "You must be logged in to do that")
+            messages.warning(request, "sorry! you must be logged in to do that")
+            # this redirects the user back to login
             return redirect('login')
 
+    def post(self, request):
+        event_name = request.POST['event_name']
+        event_location = request.POST['event_location']
+        event_type = request.POST['event_type']
+        upload_photo = request.POST['upload_photo']
+
+        # Make sure the user is logged in properly
+        if request.user.is_authenticated():
+            event = Event(event_name=event_name, event_location=event_location,
+                          event_type=event_type, upload_photo=upload_photo)
+
+            event.save()
+
+            if event is not None:
+                messages.success(request, "Event has been added successfully!")
+                return redirect('index')
 
 class Logout(View):
 
