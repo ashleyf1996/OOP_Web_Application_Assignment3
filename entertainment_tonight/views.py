@@ -25,12 +25,19 @@ class EventCreate(CreateView):
     fields = ['event_name', 'event_type', 'event_location']
 
 
-def home(request):
-    form = CreateEventForm()
-    context = {
-        "form": form
-    }
-    return render(request, 'event_form.html', context)
+class CreateEvent(View):
+
+    def get(self, request):
+
+        if request.user.is_authenticated():
+            form = CreateEventForm()
+            context = {
+                "form": form
+            }
+            return render(request, 'event_form.html', context)
+        else:
+            messages.warning(request, "You must be logged in to do that")
+            return redirect('login')
 
 
 class Logout(View):
@@ -39,8 +46,9 @@ class Logout(View):
         # Log the user out. If they are logged in
         if request.user.is_authenticated:
             # Log them out
+            user = request.user
             logout(request)
-            messages.success(request, "You have now been logged out, Danke :)!")
+            messages.success(request, "Bye %s You have now been logged out, Danke :)!" % user)
             return redirect('index')
 
 

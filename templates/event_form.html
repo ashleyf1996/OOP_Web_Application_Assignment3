@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 
+{% block title %}Entertainment Tonight | Register{% endblock %}
+
 {% block content %}
-<h1>Tell use where you are!</h1>
 
-<form >
+{% include 'header_menu.html' %}
 
-    {{ form }}
-</form>
-<br><br>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h1>Tell use where you are! We want to know what events you have found!</h1>
+        <form >
+            {{ form }}
+        </form>
+        <br><br>
+    </div>
+</div>
+{% include 'footer.html' %}
 {% endblock %}
