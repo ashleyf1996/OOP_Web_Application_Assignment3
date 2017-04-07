@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Entertainment Tonight | Home{% endblock %}
+
+{% block content %}
+
+{% include 'header_menu.html' %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h1>Events <small>Here's whats on :* ;)</small></h1>
+        <hr/>
+        {% for event in events %}
+            <p>
+            <strong>Event Name:</strong> {{ event.event_name }}<br/>
+            <strong>Event Location:</strong> {{ event.event_location }}<br/>
+            <strong>Event Type:</strong> {{ event.event_type }}<br/>
+            <strong>Photo:</strong> <img src="{{ event.upload_photo }}" width="50">
+            </p>
+            <hr/>
+        {% endfor %}
+    </div>
+</div>
+{% include 'footer.html' %}
+
+{% endblock %}

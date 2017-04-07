@@ -17,6 +17,13 @@ def index(request):
     return render(request, 'index.html', context)
 
 
+def event(request):
+    context = {
+        'events': Event.objects.all()
+    }
+    return render(request, 'event.html', context)
+
+
 class DetailView(generic.DeleteView):
     model = Event
     template_name = 'detail.html'
@@ -25,6 +32,8 @@ class DetailView(generic.DeleteView):
 class EventCreate(CreateView):
     model = Event
     fields = ['event_name', 'event_type', 'event_location']
+
+
 
 
 class CreateEvent(View):
@@ -53,7 +62,6 @@ class CreateEvent(View):
         if request.user.is_authenticated():
             event = Event(event_name=event_name, event_location=event_location,
                           event_type=event_type, upload_photo=upload_photo)
-
             event.save()
 
             if event is not None:
@@ -68,6 +76,7 @@ class Logout(View):
             # Log them out
             user = request.user
             logout(request)
+
             messages.success(request, "Bye %s You have now been logged out, Danke :)!" % user)
             return redirect('index')
 
@@ -110,6 +119,7 @@ class UserFormView(View):
 
                     login(request, user)
                     messages.success(request, "You have registered successfully and are now logged in.")
+
                     return redirect('index')
 
         return render(request, self.template_name, {'form': form})
@@ -133,7 +143,7 @@ class Login(View):
             messages.success(request, '%s you are now logged in.' % username)
             return redirect('index')
         else:
-            messages.warning(request, 'Invalid username or password')
+            messages.warning(request, 'Invalid username or password. Please make sure you are registered!')
             return redirect('login')
 
 
