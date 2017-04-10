@@ -45,7 +45,8 @@
 
                             <ul class="nav navbar-nav navbar-right">
                                <li class="">
-                                    <a href={% url 'create' %}>
+                                    <a href="{% url 'create' %}">
+                                        <img src="{{ event.upload_photo.root }}" class="img-responsive">
 
                                         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; Add Event </a>
                                 </li>

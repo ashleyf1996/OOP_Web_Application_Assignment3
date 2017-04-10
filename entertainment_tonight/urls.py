@@ -10,5 +10,6 @@ urlpatterns = [
     url(r'^register/$', views.UserFormView.as_view(), name='register'),
     url(r'^logout/$', views.Logout.as_view(), name='logout'),
     url(r'^event/$', views.event, name='event'),
+    url(r'^city/$', views.city, name='city')
 ]
 

@@ -26,6 +26,14 @@ def event(request):
     return render(request, 'event.html', context)
 
 
+def city(request):
+    context = {
+        'city': Cities.objects.all()
+    }
+    return render(request, 'event.html', context)
+
+
+
 class CreateEvent(View):
 
     def get(self, request):
