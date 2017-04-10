@@ -4,12 +4,13 @@ from django.contrib.auth import authenticate, login, logout
 from django.views.generic.edit import CreateView
 from .forms import CreateEventForm
 from .models import Event
+from .models import Cities
 from django.views.generic import View
 from django.views import generic
 from .forms import UserForm
 from django.http import HttpResponse
 
-
+#the index page
 def index(request):
     context = {
         'events': Event.objects.all()
@@ -17,23 +18,12 @@ def index(request):
     return render(request, 'index.html', context)
 
 
+# make the event
 def event(request):
     context = {
         'events': Event.objects.all()
     }
     return render(request, 'event.html', context)
-
-
-class DetailView(generic.DeleteView):
-    model = Event
-    template_name = 'detail.html'
-
-
-class EventCreate(CreateView):
-    model = Event
-    fields = ['event_name', 'event_type', 'event_location']
-
-
 
 
 class CreateEvent(View):
