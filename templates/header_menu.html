@@ -1,3 +1,5 @@
+<!-- This is the header of all my pages incl: nav bar -->
+
 {% load staticfiles %}
 <div>
     <img src="{% static "entertainment_tonight/images/logo.png" %}" height=60; width=50; alt="ET logo" align="left"/>
@@ -6,20 +8,6 @@
         <div class="jumbotron">
             <p>Entertainment Tonight</p>
 
-            <form class="form-inline" role="search" method="get" action="#">
-                <div class="form-group">
-                    <!--save in var called f-->
-                    <!--to put the search bar in the middle of the page-->
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <input type="text" class="form-control" name="search" value="Search City " width="100px">
-                    <button type="submit" class="btn  btn-default">Search </button>
-
-
-                    <!--End of jumbotron class-->
-                </div>
-
-            </form>
-        </div>
 
     </div>
 
@@ -41,7 +29,7 @@
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <li class="">
-                                    <a href="{% url 'index' %}"> logo</a>
+                                    <a href="{% url 'index' %}"> Home</a>
 
                                 </li>
                                 <li class="">

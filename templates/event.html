@@ -1,3 +1,5 @@
+<!-- This page shows the events that are on -->
+
 {% extends "base.html" %}
 
 {% block title %}Entertainment Tonight | Home{% endblock %}
@@ -7,7 +9,7 @@
 {% include 'header_menu.html' %}
 <div class="panel panel-default">
     <div class="panel-body">
-        <h1>Events <small>Here's whats on :* ;)</small></h1>
+        <h1>Events <small>Here's whats on:</small></h1>
         <hr/>
         {% for event in events %}
             <p>

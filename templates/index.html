@@ -1,3 +1,5 @@
+<!-- This is the home page to my website -->
+
 {% extends "base.html" %}
 
 {% block title %}Entertainment Tonight | Home{% endblock %}
@@ -6,6 +8,33 @@
 
 {% include 'header_menu.html' %}
 
+
+<font color="white"><h1>Just arrived in a new city? Looking for things to do? <br>Your in the right place!</h1></font><br><br>
+     <form class="form-inline" role="search" method="get" action="#">
+                <div class="form-group">
+                    <!--save in var called f-->
+                    <!--to put the search bar in the middle of the page-->
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="text" class="form-control" name="search" value="Search City " width="100px">
+                    <button type="submit" class="btn  btn-default">Search </button>
+
+
+                    <!--End of jumbotron class-->
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
 {% include 'footer.html' %}
+
 
 {% endblock %}
