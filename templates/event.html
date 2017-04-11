@@ -16,7 +16,7 @@
             <strong>Event Name:</strong> {{ event.event_name }}<br/>
             <strong>Event Location:</strong> {{ event.event_location }}<br/>
             <strong>Event Type:</strong> {{ event.event_type }}<br/>
-            <strong>Photo:</strong> <img src="{{ event.upload_photo }}" width="50">
+            <strong>Photo:</strong> <img src="{{ event.upload_photo.url }}" width="50">
             </p>
             <hr/>
         {% endfor %}

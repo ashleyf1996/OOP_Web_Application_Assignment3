@@ -26,11 +26,11 @@ def event(request):
     return render(request, 'event.html', context)
 
 
-def city(request):
+def city (request):
     context = {
         'city': Cities.objects.all()
     }
-    return render(request, 'event.html', context)
+    return render(e)
 
 
 

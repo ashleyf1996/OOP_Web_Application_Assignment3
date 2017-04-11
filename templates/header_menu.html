@@ -27,7 +27,7 @@
 
                         <!--list of sections on the navigation bar-->
                         <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav" >
                                 <li class="">
                                     <a href="{% url 'index' %}"> Home</a>
 
@@ -39,14 +39,14 @@
                                 </li>
                                 <li>
                                    <a href={% url 'event' %}>
+                                        <img src="{{event.upload_photo.url}}" class="img-responsive">
                                    Events  </a>
                                 </li>
                             </ul>
 
                             <ul class="nav navbar-nav navbar-right">
                                <li class="">
-                                    <a href="{% url 'create' %}">
-                                        <img src="{{ event.upload_photo.root }}" class="img-responsive">
+                                    <a href="{% url 'create' %}">  <img src="{{event.upload_photo.url}}" class="img-responsive">
 
                                         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; Add Event </a>
                                 </li>

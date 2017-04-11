@@ -9,9 +9,11 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^entertainment_tonight/', include('entertainment_tonight.urls')),
 
+
 ]
 
 #Whenever were in developer mode, use these (url patterns)
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

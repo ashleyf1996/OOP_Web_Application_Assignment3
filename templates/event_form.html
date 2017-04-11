@@ -11,6 +11,7 @@
     <div class="panel-body">
         <h1>Tell use where you are! We want to know what events you have found!</h1>
         <form action="" method="post">
+            <img src="{{event.upload_photo.url}}" class="img-responsive">
             {{ form }}
             <button type="submit" class="btn btn-success">Submit</button>
             {% csrf_token %}
