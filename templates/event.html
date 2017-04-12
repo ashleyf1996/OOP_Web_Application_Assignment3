@@ -2,24 +2,65 @@
 
 {% extends "base.html" %}
 
-{% block title %}Entertainment Tonight | Home{% endblock %}
+{% block title %}{{ category.name }}{% endblock %}
 
 {% block content %}
 
 {% include 'header_menu.html' %}
+
 <div class="panel panel-default">
     <div class="panel-body">
+
         <h1>Events <small>Here's whats on:</small></h1>
         <hr/>
-        {% for event in events %}
-            <p>
-            <strong>Event Name:</strong> {{ event.event_name }}<br/>
-            <strong>Event Location:</strong> {{ event.event_location }}<br/>
-            <strong>Event Type:</strong> {{ event.event_type }}<br/>
-            <strong>Photo:</strong> <img src="{{ event.upload_photo.url }}" width="50">
-            </p>
+        {% if search_events %}
+                        <p>Found these events:</p>
             <hr/>
-        {% endfor %}
+            {% for search_event in search_events %}
+                <div class="pull-right">
+                    <img src="/media/{{ search_event.upload_photo }}" width="500" height="100">
+                </div>
+                <p class="lead">{{ search_event.event_name }}<br/>
+                <small>{{ search_event.event_location }}</small><br/>
+                <span class="label label-info">{{ search_event.event_type }}</span></p>
+                <hr/>
+            {% endfor %}
+    {% else %}
+            <form name="search-event" action="" method="post">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead">First, choose your location</p>
+                        <div class="form-group">
+                            <select name="location" class="form-control">
+                                {% for city in cities %}
+                                    <option>{{ city.town_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead">And what type of event you want</p>
+                        <div class="form-group">
+                            <select name="type" class="form-control">
+                                {% for type in types %}
+                                    <option>{{ type.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    <div class="pull-right">
+                        <input type="submit" class="btn btn-info" value="See Whats On &gt;">
+                    </div>
+                    <br/><br/>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                </div>
+            {% csrf_token %}
+            </form>
+    {% endif %}
     </div>
 </div>
 {% include 'footer.html' %}

@@ -1,49 +1,79 @@
+import os
+
+from django.conf import settings
 from django.contrib import messages
-from django.shortcuts import render,redirect
+from django.core.files.base import ContentFile
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic.edit import CreateView
 from .forms import CreateEventForm
-from .models import Event
-from .models import Cities
+from .models import *
 from django.views.generic import View
 from django.views import generic
 from .forms import UserForm
 from django.http import HttpResponse
-
-#the index page
-def index(request):
-    context = {
-        'events': Event.objects.all()
-    }
-    return render(request, 'index.html', context)
+from django.core.exceptions import *
 
 
-# make the event
-def event(request):
-    context = {
-        'events': Event.objects.all()
-    }
-    return render(request, 'event.html', context)
+# the index page
+
+class index(View):
+    template_name = 'index.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
 
 
-def city (request):
-    context = {
-        'city': Cities.objects.all()
-    }
-    return render(e)
+# Shows whats on
+class EventView(View):
 
+    def get(self, request):
+        context = {
+            'types': Type.objects.all(),
+            'cities': Cities.objects.all()
+        }
+
+        return render(request, 'event.html', context)
+
+    def post(self, request):
+        type = request.POST['type']
+        location = request.POST['location']
+
+        # Now we gotta do a little do do do do dooooo search
+        try:
+            events = Event.objects.all().filter(event_type=type, event_location=location)
+
+            context = {
+                'search_events': events
+            }
+
+            return render(request, 'event.html', context)
+        except:
+            messages.warning(request, "Sorry no events like that in your selected area")
+            return redirect('event')
+
+
+def city(request):
+    all_cities = Cities.objects.all()
+    html =''
+
+    for city in all_cities:
+        html += '<a href=">' + city.town_name + '</a><br>'
+    return HttpResponse(html)
 
 
 class CreateEvent(View):
-
     def get(self, request):
 
         # this filters out who can make an event
         if request.user.is_authenticated():
             form = CreateEventForm()
             context = {
-                "form": form
+                "form": form,
+                "cities": Cities.objects.all(),
+                "types": Type.objects.all()
             }
+            print(context)
             return render(request, 'event_form.html', context)
         else:
             messages.warning(request, "sorry! you must be logged in to do that")
@@ -54,20 +84,30 @@ class CreateEvent(View):
         event_name = request.POST['event_name']
         event_location = request.POST['event_location']
         event_type = request.POST['event_type']
-        upload_photo = request.POST['upload_photo']
+
+        full_filename = os.path.join(settings.MEDIA_ROOT, settings.MEDIA_ROOT, request.FILES['upload_photo'].name)
+
+        fout = open(full_filename, 'wb+')
+
+        file_content = ContentFile(request.FILES['upload_photo'].read())
+
+        # Iterate through the chunks.
+        for chunk in file_content.chunks():
+            fout.write(chunk)
+        fout.close()
 
         # Make sure the user is logged in properly
         if request.user.is_authenticated():
             event = Event(event_name=event_name, event_location=event_location,
-                          event_type=event_type, upload_photo=upload_photo)
+                          event_type=event_type, upload_photo=request.FILES['upload_photo'].name)
             event.save()
 
             if event is not None:
-                messages.success(request, "Event has been added successfully!")
-                return redirect('index')
+                messages.success(request, "Event added successfully!")
+                return redirect('event')
+
 
 class Logout(View):
-
     def get(self, request):
         # Log the user out. If they are logged in
         if request.user.is_authenticated:
@@ -83,12 +123,10 @@ class UserFormView(View):
     form_class = UserForm
     template_name = 'registration_form.html'
 
-
     # display blank form new user coming to site
-    def get(self, request,):
+    def get(self, request, ):
         form = self.form_class(None)
         return render(request, self.template_name, {'form': form})
-
 
     # whenthe user hits submit
     def post(self, request):
@@ -114,7 +152,6 @@ class UserFormView(View):
             if user is not None:
 
                 if user.is_active:
-
                     login(request, user)
                     messages.success(request, "You have registered successfully and are now logged in.")
 
@@ -124,7 +161,6 @@ class UserFormView(View):
 
 
 class Login(View):
-
     def get(self, request):
         return render(request, 'login.html')
 
@@ -144,15 +180,15 @@ class Login(View):
             messages.warning(request, 'Invalid username or password. Please make sure you are registered!')
             return redirect('login')
 
+def list_of_post_by_category(request, category_slug):
 
+    categories = Category.objects.all()
 
+    event = Event.objects.filter(event_type='comedy')
 
-
-
-
-
-
-
-
-
-
+    if category_slug:
+        category = get_object_or_404(Category, slug=category_slug)
+        event = event.filter(category=category)
+        template = 'list_of_post_by_category..html'
+        context = {'categories': categories, 'event': event, 'category':category}
+        return render(request,template,context)

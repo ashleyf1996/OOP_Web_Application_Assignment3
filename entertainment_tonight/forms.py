@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class CreateEventForm(forms.ModelForm):
     class Meta:
         model = Event
-        fields = ['event_name', 'event_location', 'event_type', 'upload_photo']
+        fields = ['event_name', 'upload_photo']
 
 
 class UserForm(forms.ModelForm):
@@ -16,5 +16,3 @@ class UserForm(forms.ModelForm):
     class Meta:
         model = User
         fields= ['username', 'email', 'password']
-
-
