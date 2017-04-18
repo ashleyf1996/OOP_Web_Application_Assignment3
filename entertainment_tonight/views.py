@@ -46,7 +46,9 @@ class EventView(View):
             context = {
                 'search_events': events
             }
+
             return render(request, 'event.html', context)
+
 
         else:
             messages.warning(request, "Cannot find any events")
@@ -98,15 +100,22 @@ class CreateEvent(View):
         for chunk in file_content.chunks():
             fout.write(chunk)
         fout.close()
-
+        user = request.user
         # Make sure the user is logged in properly
         if request.user.is_authenticated():
             event = Event(event_name=event_name, event_location=event_location,
-                          event_type=event_type, upload_photo=request.FILES['upload_photo'].name)
+                       event_type=event_type, upload_photo=request.FILES['upload_photo'].name)
+
+
+
             event.save()
 
+            user.save()
+
+
             if event is not None:
-                messages.success(request, "Event added successfully!")
+                messages.success(request, "Thank you %s! Event added successfully!"% request.user)
+
                 return redirect('event')
 
 
