@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dde2c30-e9b4-42aa-9a94-50fbbad00f16" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/Screen_Shot_2017-04-09_at_21.46.01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/Screen_Shot_2017-04-09_at_21.48.13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/me.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/admin.py" afterPath="$PROJECT_DIR$/entertainment_tonight/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/forms.py" afterPath="$PROJECT_DIR$/entertainment_tonight/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/models.py" afterPath="$PROJECT_DIR$/entertainment_tonight/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/form.py" afterPath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/urls.py" afterPath="$PROJECT_DIR$/entertainment_tonight/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/views.py" afterPath="$PROJECT_DIR$/entertainment_tonight/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oopAssignment3/settings.py" afterPath="$PROJECT_DIR$/oopAssignment3/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oopAssignment3/urls.py" afterPath="$PROJECT_DIR$/oopAssignment3/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/event.html" afterPath="$PROJECT_DIR$/templates/event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/event_form.html" afterPath="$PROJECT_DIR$/templates/event_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/form.html" afterPath="$PROJECT_DIR$/templates/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/form2.html" afterPath="$PROJECT_DIR$/templates/form2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/list_of_post_by_category..html" afterPath="$PROJECT_DIR$/templates/list_of_post_by_category..html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -109,7 +93,7 @@
       <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="-275">
               <caret line="20" column="91" lean-forward="false" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
               <folding />
             </state>
@@ -119,8 +103,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="443">
+              <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -1069,14 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="20" column="91" lean-forward="false" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/entertainment_tonight/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1087,10 +1063,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="20" column="91" lean-forward="false" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="443">
+          <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
           <folding />
         </state>
       </provider>
