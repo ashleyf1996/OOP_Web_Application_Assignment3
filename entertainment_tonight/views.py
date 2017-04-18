@@ -26,7 +26,6 @@ class index(View):
 
 # Shows whats on
 class EventView(View):
-
     def get(self, request):
         context = {
             'types': Type.objects.all(),
@@ -40,22 +39,26 @@ class EventView(View):
         location = request.POST['location']
 
         # Now we gotta do a little do do do do dooooo search
-        try:
-            events = Event.objects.all().filter(event_type=type, event_location=location)
 
+        events = Event.objects.all().filter(event_type=type, event_location=location)
+
+        if events:
             context = {
                 'search_events': events
             }
-
             return render(request, 'event.html', context)
-        except:
-            messages.warning(request, "Sorry no events like that in your selected area")
+
+        else:
+            messages.warning(request, "Cannot find any events")
             return redirect('event')
+
+
+
 
 
 def city(request):
     all_cities = Cities.objects.all()
-    html =''
+    html = ''
 
     for city in all_cities:
         html += '<a href=">' + city.town_name + '</a><br>'
@@ -179,16 +182,3 @@ class Login(View):
         else:
             messages.warning(request, 'Invalid username or password. Please make sure you are registered!')
             return redirect('login')
-
-def list_of_post_by_category(request, category_slug):
-
-    categories = Category.objects.all()
-
-    event = Event.objects.filter(event_type='comedy')
-
-    if category_slug:
-        category = get_object_or_404(Category, slug=category_slug)
-        event = event.filter(category=category)
-        template = 'list_of_post_by_category..html'
-        context = {'categories': categories, 'event': event, 'category':category}
-        return render(request,template,context)
