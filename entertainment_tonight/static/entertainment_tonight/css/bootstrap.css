@@ -4988,8 +4988,8 @@ a.badge:focus {
 }
 @media screen and (min-width: 300px) {
   .jumbotron {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .container .jumbotron,
   .container-fluid .jumbotron {

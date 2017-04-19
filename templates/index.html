@@ -10,20 +10,7 @@
 
 
 <font color="white"><h1>Just arrived in a new city? Looking for things to do? <br>Your in the right place!</h1></font><br><br>
-     <form class="form-inline" role="search" method="get" action="#">
-                <div class="form-group">
-                    <!--save in var called f-->
-                    <!--to put the search bar in the middle of the page-->
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <input type="text" placeholder="search" class="form-control" name="q" value="Search City " width="100px">
-                    <button type="submit" class="btn  btn-default">Search </button>
-
-
-                    <!--End of jumbotron class-->
-                </div>
-
-            </form>
-        </div>
+   <font color="white"><h2>Whatever your into, there is an event for you</h2></font><br><br>
 
 
 
@@ -46,8 +33,14 @@ function myFunction() {
 <p id="demo"></p>
 
 
+{% load staticfiles %}
+<div>
+    <a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/event_pic.jpg" %}"height=200; width=350; alt="ET logo" align="left"></a>&nbsp;
 
-
+        &nbsp;<a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/theatre_pic.jpg" %}"height=200; width=350; alt="ET logo" align="left"></a>
+                &nbsp;<a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/dance_pic.jpg" %}"height=200; width=350; alt="ET logo" align="left"></a>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 {% include 'footer.html' %}
 
 
