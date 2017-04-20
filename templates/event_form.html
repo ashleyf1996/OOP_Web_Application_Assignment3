@@ -10,17 +10,19 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <h1>Tell use where you are! We want to know what events you have found!</h1>
+
         <form action="" method="post" enctype="multipart/form-data">
             <img src="{{event.upload_photo.url}}" class="img-responsive">
-            {{ form }}
+        <!-- form is linked to forms.py and loops through the fields of the event model-->
+            <br>{{ form }}<br>
         <br/>
-        <p>Event Type:</p>
+            <p><b>Event Type:</b></p>
             <select name="event_type">
                 {% for type in types %}
                     <option>{{ type.name }}</option>
                 {% endfor %}
             </select><br/><br/>
-        <p>Event Location:</p>
+            <p><b>Event Location:</b></p>
             <select name="event_location">
                 {% for city in cities %}
                     <option>{{ city.town_name }}</option>

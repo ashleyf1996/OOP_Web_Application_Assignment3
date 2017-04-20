@@ -17,6 +17,7 @@ class Cities(models.Model):
 class Event(models.Model):
     event_name = models.CharField(max_length=200)
     event_location = models.CharField(max_length=200)
+    event_address = models.CharField(max_length=200)
     event_type = models.CharField(max_length=200)
     upload_photo = models.FileField()
 

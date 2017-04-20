@@ -47,6 +47,7 @@
                 </div>
                 <p class="lead">{{ search_event.event_name }}<br/>
                 <small>{{ search_event.event_location }}</small><br/>
+                    <small>{{ search_event.event_address }}</small><br/>
                 <span class="label label-info">{{ search_event.event_type }}</span></p>
 
 
@@ -54,6 +55,8 @@
             {% endfor %}
 
     {% else %}
+
+
             <form name="search-event" action="" method="post">
                 <div class="row">
                     <div class="col-md-2">
