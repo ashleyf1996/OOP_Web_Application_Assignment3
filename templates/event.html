@@ -65,7 +65,7 @@
                     <div class="col-md-4">
                         <p class="lead">First, choose your location</p>
                         <div class="form-group">
-                            <select name="location" class="form-control">
+                            <select  name="location" class="form-control">
                                 {% for city in cities %}
                                     <option>{{ city.town_name }}</option>
                                 {% endfor %}
@@ -98,3 +98,6 @@
 {% include 'footer.html' %}
 
 {% endblock %}
+
+
+<body>
