@@ -41,6 +41,12 @@
             <br>
             <p>Found these events:</p>
             <hr/>
+            <div class="container">
+      <p>Delete event:
+        <a href={% url 'register' %}>
+
+                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; delete event:</a>
+      </p>
             {% for search_event in search_events %}
                 <div class="pull-right">
                     <img src="/media/{{ search_event.upload_photo }}"  width="100" height="100"  align="middle">
