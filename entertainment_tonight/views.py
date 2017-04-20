@@ -90,6 +90,7 @@ class CreateEvent(View):
         event_location = request.POST['event_location']
         event_type = request.POST['event_type']
         event_address = request.POST['event_address']
+        event_date = request.POST['event_date']
 
         full_filename = os.path.join(settings.MEDIA_ROOT, settings.MEDIA_ROOT, request.FILES['upload_photo'].name)
 
@@ -105,7 +106,7 @@ class CreateEvent(View):
         # Make sure the user is logged in properly
         if request.user.is_authenticated():
             event = Event(event_name=event_name, event_location=event_location,event_address=event_address,
-                       event_type=event_type, upload_photo=request.FILES['upload_photo'].name)
+                       event_type=event_type, upload_photo=request.FILES['upload_photo'].name, event_date=event_date)
 
 
 

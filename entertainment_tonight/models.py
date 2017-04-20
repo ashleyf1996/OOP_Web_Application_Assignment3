@@ -1,3 +1,4 @@
+import datetime
 from django.db import models
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
@@ -20,6 +21,8 @@ class Event(models.Model):
     event_address = models.CharField(max_length=200)
     event_type = models.CharField(max_length=200)
     upload_photo = models.FileField()
+    event_date = models.DateTimeField()
+
 
     def __str__(self):
         return self.event_name
