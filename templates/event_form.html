@@ -16,7 +16,7 @@
         <!-- form is linked to forms.py and loops through the fields of the event model-->
             <br>{{ form }}<br>
         <br/>
-
+d
             <p><b>Event Type:</b></p>
             <select name="event_type">
                 {% for type in types %}
@@ -31,6 +31,7 @@
             </select><br/><br/>
             <button type="submit" class="btn btn-success">Submit</button>
             {% csrf_token %}
+
         </form><br>
 
     </div>

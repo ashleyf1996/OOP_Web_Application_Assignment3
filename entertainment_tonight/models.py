@@ -21,7 +21,8 @@ class Event(models.Model):
     event_address = models.CharField(max_length=200)
     event_type = models.CharField(max_length=200)
     upload_photo = models.FileField()
-    event_date = models.DateTimeField()
+    event_creator = models.CharField(max_length=200)
+
 
 
     def __str__(self):
