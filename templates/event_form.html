@@ -6,16 +6,21 @@
 {% block content %}
 
 {% include 'header_menu.html' %}
+    <script>
+function preferedLocation() {
+    prefer = document.forms[0].browsers.value;
+    alert("Is this location correct: " + prefer);
+}
+</script>
 
+<body>
 <div class="panel panel-default">
     <div class="panel-body">
         <h1>Tell use where you are! We want to know what events you have found!</h1>
 
-<body>
 
-  <script>
 
-</script>
+
         <form action="" method="post" enctype="multipart/form-data">
             <img src="{{event.upload_photo.url}}" class="img-responsive">
         <!-- form is linked to forms.py and loops through the fields of the event model-->
@@ -43,14 +48,8 @@
         </form><br>
 
     </div>
-    </body>
-
-<script>
-function preferedLocation() {
-    prefer = document.forms[0].browsers.value;
-    alert("Is this location correct: " + prefer);
-}
-</script>
+</div>
+</body>
 
 
 
