@@ -51,7 +51,7 @@ class EventView(View):
 
 
         else:
-            messages.warning(request, "Cannot find any events")
+            messages.warning(request, "Sorry! Cannot find any events matching that criteria. Please try again")
             return redirect('event')
 
 
@@ -210,6 +210,7 @@ class DeleteEvent(View):
         if request.user.is_authenticated:
             event = Event.objects.get(id=id)
             event.delete()
+            messages.success(request, 'Your event was deleted successfully. Would you like to add another one?')
             return redirect('event')
         else:
              messages.warning(request, 'Sorry you have to be logged in to delete event')
