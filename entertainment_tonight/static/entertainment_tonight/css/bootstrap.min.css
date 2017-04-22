@@ -5057,9 +5057,9 @@ a.badge:hover {
     color: deeppink;
 }
 .jumbotron p {
-    margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200
+    margin-bottom: 1px;
+    font-size: 31px;
+    font-weight: 600
 }
 .jumbotron>hr {
     border-top-color: #d5d5d5

@@ -35,6 +35,7 @@
         {% if search_events %}
 
             {% load staticfiles %}
+            {%event.delete() %}
             <p>Welcome! {{ user.get_username }} why don't you tell your friends about the events you like? &nbsp; Please review us:<h1>&#9734;&#9734;&#9734;&#9734;&#9734;</h1></p>
             <a href="https://www.facebook.com/"><img src="{% static "entertainment_tonight/images/fb_logo.png" %}"height=30; width=30; alt="ET logo" align="middle"></a>
               <a href="https://www.twitter.com/"><img src="{% static "entertainment_tonight/images/twitter_logo.png" %}"height=30; width=30; alt="ET logo" align="middle"></a><br>
@@ -42,14 +43,11 @@
             <p>Found these events:</p>
             <hr/>
             <div class="container">
-      <p>Delete event:
-        <a href={% url 'register' %}>
+  <a href={% url 'create' %}>
 
-                                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; delete event:</a>
-      </p>
             {% for search_event in search_events %}
                 <div class="pull-right">
-                    <img src="/media/{{ search_event.upload_photo }}"  width="100" height="100"  align="middle">
+                    <img src="/media/{{ search_event.upload_photo }}"  width="100" height="100"  align="left">
                 </div>
                 <p class="lead">{{ search_event.event_name }}<br/>
                 <small>{{ search_event.event_location }}</small><br/>

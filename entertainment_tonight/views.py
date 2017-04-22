@@ -113,12 +113,14 @@ class CreateEvent(View):
 
             event.save()
 
+
             if event is not None:
                 messages.success(request, "Thank you %s! Event added successfully!"% request.user)
 
                 return redirect('event')
             else:
                 messages.warning(request, "Please add an event")
+
 
 
 class Logout(View):
