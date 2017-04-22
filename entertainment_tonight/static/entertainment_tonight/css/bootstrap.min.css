@@ -1263,6 +1263,7 @@ h6 small {
 .h1,
 h1 {
     font-size: 36px
+    color: white;
 }
 .h2,
 h2 {
@@ -3706,7 +3707,7 @@ tbody.collapse.in {
     z-index: 990
 }
 .pull-right>.dropdown-menu {
-    right: 0;
+    right: 1;
     left: auto
 }
 .dropup .caret,
@@ -4415,8 +4416,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 .navbar-nav>li>a {
     padding-top: 10px;
+     color: pink;
     padding-bottom: 10px;
     line-height: 20px
+
 }
 @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
@@ -5050,16 +5053,23 @@ a.badge:hover {
     padding-bottom: 20px;
     margin-bottom: 20px;
     color: inherit;
-    background-color: #eee
+    background-color:   purple;
 }
 .jumbotron .h1,
 .jumbotron h1 {
     color: deeppink;
 }
 .jumbotron p {
-    margin-bottom: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   position: relative;
+color:   #cccccc;
+      text-align: center;
+        text-indent: -115px;
+    bottom: 10px;
     font-size: 31px;
     font-weight: 600
+
 }
 .jumbotron>hr {
     border-top-color: #d5d5d5

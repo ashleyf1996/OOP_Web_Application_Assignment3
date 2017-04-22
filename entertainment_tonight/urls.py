@@ -9,6 +9,8 @@ urlpatterns = [
     # /entertainment_tonight/
     url(r'^$', views.index.as_view(), name='index'),
     url(r'^create/$', views.CreateEvent.as_view(), name='create'),
+    url(r'^about/$', views.About.as_view(), name='about'),
+    url(r'^event/delete-event/(?P<id>[0-9]+)/$', views.DeleteEvent.as_view(), name='delete-event'),
 
     url(r'login/$', views.Login.as_view(), name='login'),
     url(r'^register/$', views.UserFormView.as_view(), name='register'),

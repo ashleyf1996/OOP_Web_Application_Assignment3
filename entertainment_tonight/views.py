@@ -195,3 +195,23 @@ class Login(View):
         else:
             messages.warning(request, 'Invalid username or password. Please make sure you are registered!')
             return redirect('login')
+
+class About(View):
+    template_name = 'about.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+
+class DeleteEvent(View):
+
+
+    def get(self, request,id):
+
+        event = Event.objects.get(id=id)
+        event.delete()
+        return redirect('event')
+
+
+
+
