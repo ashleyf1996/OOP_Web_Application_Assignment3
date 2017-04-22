@@ -207,10 +207,13 @@ class DeleteEvent(View):
 
 
     def get(self, request,id):
-
-        event = Event.objects.get(id=id)
-        event.delete()
-        return redirect('event')
+        if request.user.is_authenticated:
+            event = Event.objects.get(id=id)
+            event.delete()
+            return redirect('event')
+        else:
+             messages.warning(request, 'Sorry you have to be logged in to delete event')
+             return redirect('login')
 
 
 
