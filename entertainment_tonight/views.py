@@ -51,7 +51,7 @@ class EventView(View):
 
 
         else:
-            messages.warning(request, "Sorry! Cannot find any events matching that criteria. Please try again")
+            messages.warning(request, "Sorry! Cannoclt find any events matching that criteria. Please try again")
             return redirect('event')
 
 
@@ -90,7 +90,6 @@ class CreateEvent(View):
         event_location = request.POST['event_location']
         event_type = request.POST['event_type']
         event_address = request.POST['event_address']
-        event_creator = request.POST['event_creator']
 
 
         full_filename = os.path.join(settings.MEDIA_ROOT, settings.MEDIA_ROOT, request.FILES['upload_photo'].name)
@@ -106,7 +105,11 @@ class CreateEvent(View):
         user = request.user
         # Make sure the user is logged in properly
         if request.user.is_authenticated():
-            event = Event(event_name=event_name, event_location=event_location,event_address=event_address,event_creator=event_creator,
+
+            # Get the user object to put into the databass
+            user = User.objects.get(id=request.user.id)
+
+            event = Event(event_name=event_name, event_location=event_location,event_address=event_address,event_creator=user,
                        event_type=event_type, upload_photo=request.FILES['upload_photo'].name)
 
 
@@ -208,10 +211,19 @@ class DeleteEvent(View):
 
     def get(self, request,id):
         if request.user.is_authenticated:
+
+            # Check to make sure that the user whos deleting the event has access
+            user = User.objects.get(id=request.user.id)
+
             event = Event.objects.get(id=id)
-            event.delete()
-            messages.success(request, 'Your event was deleted successfully. Would you like to add another one?')
-            return redirect('event')
+
+            if user == event.event_creator:
+                event.delete()
+                messages.success(request, 'Your event was deleted successfully. Would you like to add another one?')
+                return redirect('event')
+            else:
+                messages.warning(request, "You do not own this event, you cannot delete it.")
+                return redirect('event')
         else:
              messages.warning(request, 'Sorry you have to be logged in to delete event')
              return redirect('login')
