@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3dde2c30-e9b4-42aa-9a94-50fbbad00f16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/forms.py" afterPath="$PROJECT_DIR$/entertainment_tonight/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/about.html" afterPath="$PROJECT_DIR$/templates/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/form-template.html" afterPath="$PROJECT_DIR$/templates/form-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header_menu.html" afterPath="$PROJECT_DIR$/templates/header_menu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,23 +45,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="96" lean-forward="false" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
+            <state relative-caret-position="150">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
-                <element signature="e#333#354#0#HTML" expanded="true" />
+                <element signature="e#329#350#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="1479" column="23" lean-forward="false" selection-start-line="1479" selection-start-column="23" selection-end-line="1479" selection-end-column="23" />
+            <state relative-caret-position="-191">
+              <caret line="5605" column="22" lean-forward="false" selection-start-line="5605" selection-start-column="22" selection-end-line="5605" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -1250,21 +1245,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="1479" column="23" lean-forward="false" selection-start-line="1479" selection-start-column="23" selection-end-line="1479" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#329#350#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="96" lean-forward="false" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
-          <folding>
-            <element signature="e#333#354#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="-191">
+          <caret line="5605" column="22" lean-forward="false" selection-start-line="5605" selection-start-column="22" selection-end-line="5605" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
