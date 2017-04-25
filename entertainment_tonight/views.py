@@ -90,6 +90,11 @@ class CreateEvent(View):
         event_location = request.POST['event_location']
         event_type = request.POST['event_type']
         event_address = request.POST['event_address']
+        created_at = request.POST['created_at']
+        event_date = request.POST['event_date']
+
+
+
 
 
         full_filename = os.path.join(settings.MEDIA_ROOT, settings.MEDIA_ROOT, request.FILES['upload_photo'].name)
@@ -109,7 +114,7 @@ class CreateEvent(View):
             # Get the user object to put into the databass
             user = User.objects.get(id=request.user.id)
 
-            event = Event(event_name=event_name, event_location=event_location,event_address=event_address,event_creator=user,
+            event = Event(event_name=event_name, created_at=created_at, event_date=event_date, event_location=event_location,event_address=event_address,event_creator=user,
                        event_type=event_type, upload_photo=request.FILES['upload_photo'].name)
 
 

@@ -4421,6 +4421,13 @@ textarea.input-group-sm>.input-group-btn>.btn {
     line-height: 20px
 
 }
+div {
+    background-color: wh
+    width: 300px;
+    border: 30px solid #66ccff;
+    padding: 10px;
+    margin: 30px;
+}
 @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
         position: static;

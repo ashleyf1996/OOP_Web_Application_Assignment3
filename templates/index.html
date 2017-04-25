@@ -9,9 +9,10 @@
 {% include 'header_menu.html' %}
 
 
-<font color="white"><h1>Just arrived in a new city? Looking for things to do? <br>Your in the right place! Or have you just arrived in a new city and to tell people about an event?</h1></font><br><br>
-   <font color="white"><h2>Whatever your into, there is an event for you</h2></font><br><br>
+<font color="white"><h1>Just arrived in a new city Looking for things to do?Or would you like to tell people about an event  </h1></font><br><br>
+   <font color="white"><h2>Whatever your into, Your in the right place!</h2></font><br><br>
 
+    <div>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
 <!DOCTYPE html>
 <html>
@@ -21,7 +22,7 @@
 
 
 
-<button onclick="setTimeout(myFunction, 1000);">Did you know?</button>
+<button onclick="setTimeout(myFunction, 1000);">Did you know?</button><br><br>
 
 <script>
 function myFunction() {
@@ -36,10 +37,10 @@ function myFunction() {
 
 {% load staticfiles %}
 <div>
-    <a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/event_pic.jpg" %}"height=200; width=350; alt="ET logo" align="left"></a>&nbsp;
+    <a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/event_pic.jpg" %}"height=200; width=300; alt="ET logo" align="left"></a>&nbsp;
 
-        &nbsp;<a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/theatre_pic.jpg" %}"height=200; width=350; alt="ET logo" align="left"></a>
-                &nbsp;<a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/dance_pic.jpg" %}"height=200; width=350; alt="ET logo" align="left"></a>
+    <a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/theatre_pic.jpg" %}"height=200; width=300; alt="ET logo" align="left"></a>
+                &nbsp;<a href="{% url 'event' %}"><img src="{% static "entertainment_tonight/images/dance_pic.jpg" %}"height=200; width=300; alt="ET logo" align="left"></a>
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 {% include 'footer.html' %}

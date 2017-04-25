@@ -22,6 +22,8 @@ class Event(models.Model):
     event_type = models.CharField(max_length=200)
     upload_photo = models.FileField()
     event_creator = models.ForeignKey(User)
+    created_at = models.DateTimeField()
+    event_date = models.DateTimeField()
 
 
 
