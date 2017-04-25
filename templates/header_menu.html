@@ -1,16 +1,21 @@
 <!-- This is the header of all my pages incl: nav bar -->
 
 {% load staticfiles %}
-<div>
     <a href="{% url 'index' %}"><img src="{% static "entertainment_tonight/images/logo.png" %}"height=80; width=100; alt="ET logo" align="left"></a>
-
-</div>
+    <div class="container">
      <!--Jumbotron puts a shodow around the text-->
-        <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-3">
 
-            <p>&nbsp;&nbsp;&nbsp;Entertainment Tonight </p>
-</div>
+            </div>
+            <div class="col-md-6" style="background-color: #22006C;">
+                <h2 class="text-center" style="color: white;">Entertainment Tonight<br> </h2>
+            </div>
+            <div class="col-md-3">
 
+            </div>
+        </div>
+    </div>
 
     <div class="container">
 

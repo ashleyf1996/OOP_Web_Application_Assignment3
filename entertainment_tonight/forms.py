@@ -8,6 +8,12 @@ class CreateEventForm(forms.ModelForm):
         model = Event
         fields = ['event_name', 'upload_photo', 'event_address','created_at','event_date']
 
+    event_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+    upload_photo = forms.FileField()
+    event_address = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+    created_at = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+    event_date = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+
 
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)

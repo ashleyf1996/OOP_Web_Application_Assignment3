@@ -1220,7 +1220,7 @@ h6 small {
 h1,
 h2,
 h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px
 }
 .h1 .small,
@@ -1477,7 +1477,7 @@ blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
     font-size: 17.5px;
-    border-left: 5px solid #eee
+    border-left: white;
 }
 blockquote ol:last-child,
 blockquote p:last-child,
@@ -2644,8 +2644,6 @@ output {
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -2656,7 +2654,7 @@ output {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 .form-control:focus {
-    border-color: #66afe9;
+    border-color: darkgreen;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
@@ -3206,8 +3204,8 @@ fieldset[disabled] .btn-default:hover {
 }
 .btn-primary {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4
+    background-color: turquoise;
+    border-color: turquoise;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -4079,6 +4077,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;
+    font-size: 30px;
      background-color: #872f2f;
 }
 .nav>li.disabled>a {
@@ -4587,8 +4586,9 @@ textarea.input-group-sm>.input-group-btn>.btn {
     }
 }
 .navbar-default {
-    background-color: #f8f8f8;
-    border-color: #e7e7e7
+    background-color: black; /* This is da navbar */
+
+
 }
 .navbar-default .navbar-brand {
     color: #777
@@ -4596,24 +4596,28 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
     color: #5e5e5e;
-    background-color: transparent
+    background-color: blue;
 }
 .navbar-default .navbar-text {
-    color: #777
+     font-size: 17px;
+    color: white;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #777
+    font-size: 17px;
+    float: left;
+    color: white;
 }
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    color: #333;
-    background-color: transparent
+    color: whitesmoke;
+    font-size: 17px;
+    background-color: darkblue;
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    background-color: #e7e7e7
+    color: white;
+    background-color: white;
 }
 .navbar-default .navbar-nav>.disabled>a,
 .navbar-default .navbar-nav>.disabled>a:focus,
@@ -4633,7 +4637,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #e7e7e7
+    border-color:  pink;
 }
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:focus,
@@ -5050,30 +5054,30 @@ a.badge:hover {
     margin-left: 3px
 }
 .jumbotron {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
     color: inherit;
-    background-color:   purple;
+    background-color: #22006C;
 }
 .jumbotron .h1,
 .jumbotron h1 {
-    color: deeppink;
+    color: white;
 }
 .jumbotron p {
     margin-bottom: 0px;
     margin-top: 0px;
    position: relative;
-color:   #cccccc;
+        color:   white;
       text-align: center;
         text-indent: -115px;
-    bottom: 10px;
+    bottom: 16px;
     font-size: 31px;
     font-weight: 600
 
 }
 .jumbotron>hr {
-    border-top-color: #d5d5d5
+    border-top-color: rebeccapurple;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -5598,14 +5602,17 @@ button.list-group-item-danger.active:hover {
 
     padding: 15px;
     padding-bottom: 0px;
+    color: black;
 
 
 }
 .panel-heading {
     padding: 150px 15px;
+    color: yellow;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 5px;
     border-top-right-radius: 3px
+
 }
 .panel-heading>.dropdown .dropdown-toggle {
     color: inherit
@@ -5970,8 +5977,8 @@ button.list-group-item-danger.active:hover {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
 }
 .well blockquote {
-    border-color: #ddd;
-    border-color: rgba(0, 0, 0, .15)
+    border-color: white;
+    border-color: white;
 }
 .well-lg {
     padding: 24px;
@@ -6895,4 +6902,3 @@ button.close {
         display: none!important
     }
 }
-/*# sourceMappingURL=bootstrap.min.css.map */
