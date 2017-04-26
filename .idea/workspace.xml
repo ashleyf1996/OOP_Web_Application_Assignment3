@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3dde2c30-e9b4-42aa-9a94-50fbbad00f16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/forms.py" afterPath="$PROJECT_DIR$/entertainment_tonight/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/views.py" afterPath="$PROJECT_DIR$/entertainment_tonight/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/event.html" afterPath="$PROJECT_DIR$/templates/event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/event_form.html" afterPath="$PROJECT_DIR$/templates/event_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header_menu.html" afterPath="$PROJECT_DIR$/templates/header_menu.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,10 +34,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="event_form.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="event_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/event_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="-4">
               <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding />
             </state>
@@ -119,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="event.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+            <state relative-caret-position="270">
+              <caret line="69" column="29" lean-forward="false" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
               <folding>
                 <element signature="e#587#593#0#HTML" expanded="true" />
                 <element signature="e#795#801#0#HTML" expanded="true" />
@@ -195,9 +190,9 @@
       <find>btn-suc</find>
       <find>a</find>
       <find>text-decor</find>
-      <find>form-control</find>
       <find>img</find>
       <find>panel=def</find>
+      <find>form-control</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -250,8 +245,8 @@
         <option value="$PROJECT_DIR$/templates/header_menu.html" />
         <option value="$PROJECT_DIR$/entertainment_tonight/forms.py" />
         <option value="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/templates/event.html" />
         <option value="$PROJECT_DIR$/templates/event_form.html" />
+        <option value="$PROJECT_DIR$/templates/event.html" />
       </list>
     </option>
   </component>
@@ -1299,10 +1294,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="72" column="14" lean-forward="true" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+        <state relative-caret-position="270">
+          <caret line="69" column="29" lean-forward="false" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
           <folding>
             <element signature="e#587#593#0#HTML" expanded="true" />
             <element signature="e#795#801#0#HTML" expanded="true" />
@@ -1319,14 +1322,6 @@
             <element signature="e#2661#2667#0#HTML" expanded="true" />
             <element signature="e#2673#2679#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/event_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
