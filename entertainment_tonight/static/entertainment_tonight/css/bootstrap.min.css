@@ -1267,7 +1267,7 @@ h1 {
 }
 .h2,
 h2 {
-    font-size: 30px
+    font-size: 20px
 }
 .h3,
 h3 {
@@ -1475,14 +1475,14 @@ abbr[title] {
 }
 blockquote {
     padding: 10px 20px;
-    margin: 0 0 20px;
+    margin: 0 0 2px;
     font-size: 17.5px;
     border-left: white;
 }
 blockquote ol:last-child,
 blockquote p:last-child,
 blockquote ul:last-child {
-    margin-bottom: 0
+    margin-bottom: 10px;
 }
 blockquote .small,
 blockquote footer,
