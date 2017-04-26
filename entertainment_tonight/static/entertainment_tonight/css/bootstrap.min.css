@@ -2639,7 +2639,7 @@ output {
 }
 .form-control {
     display: block;
-    width: 30%;
+    width: 70%;
     height: 34px;
     padding: 6px 12px;
     padding-bottom: 10px;
@@ -3324,7 +3324,7 @@ fieldset[disabled] .btn-success:hover {
 .btn-info {
     color: #fff;
     background-color: #5bc0de;
-    border-color: #46b8da
+    border-color: #46b8da;
 }
 
 .btn-info.focus,
@@ -5597,6 +5597,8 @@ button.list-group-item-danger.active:hover {
 }
 .panel {
     margin-bottom: 25px;
+    margin-right: 0px;
+
     background-color: white;
     border: 2px solid turquoise;
     border-radius: 10px;

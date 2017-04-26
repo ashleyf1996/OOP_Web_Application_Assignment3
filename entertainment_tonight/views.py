@@ -139,7 +139,7 @@ class Logout(View):
             user = request.user
             logout(request)
 
-            messages.success(request, "Bye %s You have now been logged out, Danke :)!" % user)
+            messages.success(request, "Bye %s You have now been logged out, visit us soon!" % user)
             return redirect('index')
 
 

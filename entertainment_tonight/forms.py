@@ -9,6 +9,7 @@ class CreateEventForm(forms.ModelForm):
         fields = ['event_name', 'upload_photo', 'event_address','created_at','event_date']
 
     event_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+
     upload_photo = forms.FileField()
     event_address = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
     created_at = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
