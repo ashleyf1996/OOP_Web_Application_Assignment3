@@ -18,6 +18,7 @@ from django.core.exceptions import *
 # the index page
 
 class index(View):
+
     template_name = 'index.html'
 
     def get(self, request):
@@ -26,7 +27,9 @@ class index(View):
 
 # Shows whats on
 class EventView(View):
+
     def get(self, request):
+
         context = {
             'types': Type.objects.all(),
             'cities': Cities.objects.all()
@@ -35,10 +38,11 @@ class EventView(View):
         return render(request, 'event.html', context)
 
     def post(self, request):
+
         type = request.POST['type']
         location = request.POST['location']
 
-        # Now we gotta do a little do do do do dooooo search
+        # Search
 
         events = Event.objects.all().filter(event_type=type, event_location=location)
 
@@ -49,13 +53,9 @@ class EventView(View):
 
             return render(request, 'event.html', context)
 
-
         else:
             messages.warning(request, "Sorry! Cannot find any events matching that criteria. Please try again")
             return redirect('event')
-
-
-
 
 
 def city(request):
@@ -80,6 +80,7 @@ class CreateEvent(View):
             }
             print(context)
             return render(request, 'event_form.html', context)
+
         else:
             messages.warning(request, "sorry! you must be logged in to do that")
             # this redirects the user back to login
@@ -92,9 +93,6 @@ class CreateEvent(View):
         event_address = request.POST['event_address']
         created_at = request.POST['created_at']
         event_date = request.POST['event_date']
-
-
-
 
 
         full_filename = os.path.join(settings.MEDIA_ROOT, settings.MEDIA_ROOT, request.FILES['upload_photo'].name)
@@ -111,16 +109,13 @@ class CreateEvent(View):
         # Make sure the user is logged in properly
         if request.user.is_authenticated():
 
-            # Get the user object to put into the databass
+            # Get the user object to put into the database
             user = User.objects.get(id=request.user.id)
 
             event = Event(event_name=event_name, created_at=created_at, event_date=event_date, event_location=event_location,event_address=event_address,event_creator=user,
                        event_type=event_type, upload_photo=request.FILES['upload_photo'].name)
 
-
-
             event.save()
-
 
             if event is not None:
                 messages.success(request, "Thank you %s! Event added successfully!"% request.user)
@@ -170,7 +165,7 @@ class UserFormView(View):
             user.set_password(password)
             user.save()
 
-            # returns user objects if credentials are correct - nboston
+            # returns user objects if credentials are correct
             user = authenticate(username=username, password=password)
 
             if user is not None:

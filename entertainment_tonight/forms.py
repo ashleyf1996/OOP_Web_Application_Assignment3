@@ -2,6 +2,8 @@ from django import forms
 from .models import Event
 from django.contrib.auth.models import User
 
+# This is the form used to create the event
+
 
 class CreateEventForm(forms.ModelForm):
     class Meta:
@@ -18,8 +20,8 @@ class CreateEventForm(forms.ModelForm):
 
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput)
-    # information about your class
 
+    # Meta class stores information about my class
     class Meta:
         model = User
         fields= ['username', 'email', 'password']

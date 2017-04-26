@@ -19,9 +19,6 @@ function preferedLocation() {
         <blockquote><h1><font color="#3d0099">Share with the world an event  that you have found or and event you are hosting!</font></h1></blockquote></font>
 
 
-
-
-
         <form action="" method="post" enctype="multipart/form-data">
             <img src="{{event.upload_photo.url}}" class="img-responsive">
         <!-- form is linked to forms.py and loops through the fields of the event model-->
@@ -40,7 +37,7 @@ function preferedLocation() {
                 {% for city in cities %}
 
                     <option>{{ city.town_name }}</option>
-</blockquote>
+
                 {% endfor %}
             </select><br/><br/>
             <button type="submit" class="btn btn-success">Submit</button>

@@ -1,11 +1,22 @@
-Name: Ashley Fitzgerald
-Student Number: C15406208
+**Name:** Ashley Fitzgerald
 
-Assignment: Create anything we want in any oop language
+**Student Number:** C15406208
 
-My creation: Entertainment Tonight  (Individual project made just by me)
+**Youtube video:**
 
-Decription of project: 
+ [![Video](http://img.youtube.com/vi/S8SIFTEqghQ/0.jpg)](hhttps://www.youtube.com/watch?v=GV6mdkRoPiU)
+
+
+**Assignment:** Create anything we want in any oop language
+
+**My creation:** Entertainment Tonight  (Individual project made just by me)
+
+***to use my website please type in this url, note: you need /entertainment_tonight  at the end ***
+
+
+To use my website : http://138.68.185.108/entertainment_tonight/
+
+**Decription of project:**
 
 I made a website called Entertainment Tonight. This website is designed for people travelling
 to new cities and want to see what events on. The person can search by city and the category they
@@ -23,7 +34,7 @@ Language and Platform I used: The oop language is used is PYTHON. I used a pytho
 
 
 
-CONCEPT
+**CONCEPT**
 
 What was the idea for my website?
 
@@ -33,7 +44,7 @@ What was the idea for my website?
  	 students and anybody who wants to find out whats on in a given city.
 
 		
-DESIGN
+**DESIGN**
 
 Why did i choose to do my final OOP assignment in python? 
 
@@ -46,7 +57,7 @@ Why did i choose to do my final OOP assignment in python?
 	*** Entertainment Tonight ***
 
 
-FEATURES
+**FEATURES**
 
 What is in my website?
 
@@ -74,7 +85,7 @@ What is in my website?
 
 	- This is where a user can login, logout and register for the website. 
 
-TECHNICAL DESIGN OF MY WEBSITE
+**TECHNICAL DESIGN OF MY WEBSITE**
 
 - I made this website using a python framework called Django. Within Django I incorporated
   html,bootstrap and css to make and style my website! 
@@ -107,9 +118,42 @@ TECHNICAL DESIGN OF MY WEBSITE
  And much more!
 
 
- FEATURES IM PROUD OF 
+ **FEATURES IM PROUD OF**
 
- 1. 
+ 1. I thought myself a NEW LANGUAGE! This was challenging at first, I had to step in to the world
+    of python and learn lots of new syntax. I am proud I managed to teach myself a new language and
+    complete and built a website using that new language I learned
+
+ 2. I never heard of DJANGO (the platform i used) before this assignment. I had to teach myself
+    how to use it and wrap my head around the workings of how to use it. As mentioned above I had
+    to wrap my head around urls. Also I have only ever made a website using basic html never with
+    an oop language, So I learn to encorporate them both to create this website.
+
+ 3. The TECHNICAL THINGS I am proud of, the things we learn on the course with bryan included 
+    CLASSES,OBJECTS,POLYMORPHISM,INHERITANCE AND INTERFACES. All of these elements are in my website
+    and made my website possible. Everything is organised into classes, objects are used to make instances of the classes, my model classes are a subclass of the django superclass MODEL, my view classes are a subclass of the django super class View theses are examples of POLYMOREPHISM AND INHERTANCE. 
+
+ 4. I am proud of the APPREANCE of my website. I decided on the colour of purple to be the scheme of
+    my website. 
+
+ 5. INHERITANCE is something that has really helped me in this assignment. I mentioned above the 
+    first thing i used inheritance for. The other thing i used inheritance for is the design of my 
+    website. I knew each page had to have a header menu, title footer and body. So made a base html page and included the common elements to my page. In each page i included extend base html this meant i didnt have THE SAME CODE for the common elements in everypage i just had it once in base html. 
+
+ 6. There are many things I am proud of in this assignment. I did this ON MY OWN, I THOUGHT MYSELF 
+    a new language, I used classes and objects. 
+
+
+ **CONCLUSION**
+
+ I really enjoyed making this website. This was my favourite OOP assignment. For many reasons, I have a much better understanding of how classes and objects work. I leart python. I learned how to use bootstrap. The skills I have learnt in this assignment will definitely stand to me in the future!
+
+
+ **ENJOY ENTERTAINMENT TONIGHT!**
+
+
+ 
+
 
    
 

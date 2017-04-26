@@ -14,60 +14,57 @@
        <blockquote><h1>Events <small>Here's whats on:</small></h1></blockquote>
 
         <hr/><br>
-
-
-
 </div>
 
         {% if search_events %}
 
             {% load staticfiles %}
 
-            <blockquote><h3> <font color="#00b8e6"><b></b>Welcome! {{ user.get_username }},</font> </b>why don't you tell your friends about the events you like? &nbsp; </h3>
-           <blockquote><a href="https://www.facebook.com/"><img src="{% static "entertainment_tonight/images/fb_logo.png" %}"height=30; width=30; alt="ET logo" align="middle"></a>
-               &nbsp; <a href="https://www.twitter.com/"><img src="{% static "entertainment_tonight/images/twitter_logo.png" %}"height=30; width=30; alt="ET logo" align="middle"></a><br></blockquote>
-            <br>
+                    <blockquote><h3> <font color="#00b8e6"><b></b>Welcome! {{ user.get_username }},</font> </b>why don't you tell your friends about the events you like? &nbsp; </h3>
+                   <blockquote><a href="https://www.facebook.com/"><img src="{% static "entertainment_tonight/images/fb_logo.png" %}"height=30; width=30; alt="ET logo" align="middle"></a>
+                       &nbsp; <a href="https://www.twitter.com/"><img src="{% static "entertainment_tonight/images/twitter_logo.png" %}"height=30; width=30; alt="ET logo" align="middle"></a><br></blockquote>
+                    <br>
 
-            <p><i>Please rate us!</i></p>
-             <div class="stars">
-  <form action="">
-    <input class="star star-5" id="star-5" type="radio" name="star"/>
-    <label class="star star-5" for="star-5"></label>
-    <input class="star star-4" id="star-4" type="radio" name="star"/>
-    <label class="star star-4" for="star-4"></label>
-    <input class="star star-3" id="star-3" type="radio" name="star"/>
-    <label class="star star-3" for="star-3"></label>
-    <input class="star star-2" id="star-2" type="radio" name="star"/>
-    <label class="star star-2" for="star-2"></label>
-    <input class="star star-1" id="star-1" type="radio" name="star"/>
-    <label class="star star-1" for="star-1"></label>
-  </form><br><br><br><br><br>
-            <hr>
+                    <p><i>Please rate us!</i></p>
+                                 <div class="stars">
+                      <form action="">
+                        <input class="star star-5" id="star-5" type="radio" name="star"/>
+                        <label class="star star-5" for="star-5"></label>
+                        <input class="star star-4" id="star-4" type="radio" name="star"/>
+                        <label class="star star-4" for="star-4"></label>
+                        <input class="star star-3" id="star-3" type="radio" name="star"/>
+                        <label class="star star-3" for="star-3"></label>
+                        <input class="star star-2" id="star-2" type="radio" name="star"/>
+                        <label class="star star-2" for="star-2"></label>
+                        <input class="star star-1" id="star-1" type="radio" name="star"/>
+                        <label class="star star-1" for="star-1"></label>
+                      </form><br><br><br><br><br>
+                    <hr>
 
-            <p>Found these events:</p>
-            <hr/>
-            <div class="container">
+                    <p>Found these events:</p>
+                    <hr/>
+                    <div class="container">
 
 {% for search_event in search_events %}
 
-                <div class="pull-center">
-                    <img src="/media/{{ search_event.upload_photo }}" &nbsp width="200" height="200"  align="left">
-                </div>
+                    <div class="pull-center">
+                        <img src="/media/{{ search_event.upload_photo }}" &nbsp width="200" height="200"  align="left">
+                    </div>
 
-               &nbsp; <span class="label label-info">&nbsp;{{ search_event.event_type }}</span></p>
-    <p class="lead">&nbsp;&nbsp;<font color=" black"><b>{{ search_event.event_name }}<br/></b></font>
+                   &nbsp; <span class="label label-info">&nbsp;{{ search_event.event_type }}</span></p>
+                     <p class="lead">&nbsp;&nbsp;<font color=" black"><b>{{ search_event.event_name }}<br/></b></font>
 
-                <small>&nbsp; In: &nbsp;{{ search_event.event_location }}</small>
-                 <small> At: &nbsp;{{ search_event.event_address }}</small>
+                    <small>&nbsp; In: &nbsp;{{ search_event.event_location }}</small>
+                     <small> At: &nbsp;{{ search_event.event_address }}</small>
 
-    <p class="lead">&nbsp;&nbsp;<font color="black"><b>When the event was made:</b></font> <small>Date: &nbsp; {{ search_event.created_at }}</small></p>
-    <blockquote><p><font color="#00008b"><b>Event date:</b></font> <small>&nbsp;Date: &nbsp;{{ search_event.event_date}}</small></p></blockquote>
+                     <p class="lead">&nbsp;&nbsp;<font color="black"><b>When the event was made:</b></font> <small>Date: &nbsp; {{ search_event.created_at }}</small></p>
+                     <blockquote><p><font color="#00008b"><b>Event date:</b></font> <small>&nbsp;Date: &nbsp;{{ search_event.event_date}}</small></p></blockquote>
 
-    <blockquote> <p> <font color="#00008b"><b>Event creator:</b></font></p>
-    <small>Posted by: &nbsp <font color=" #6600cc">{{ search_event.event_creator }}</font></small><br/>
-        <a href="delete-event/{{ search_event.id }}"><font color="#b22222">Delete Event</a></font></blockquote>
+                    <blockquote> <p> <font color="#00008b"><b>Event creator:</b></font></p>
+                    <small>Posted by: &nbsp <font color=" #6600cc">{{ search_event.event_creator }}</font></small><br/>
+                    <a href="delete-event/{{ search_event.id }}"><font color="#b22222">Delete Event</a></font></blockquote>
 
-                <hr/><br><br>
+                    <hr/><br><br>
             {% endfor %}
 
     {% else %}
