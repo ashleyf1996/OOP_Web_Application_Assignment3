@@ -1,7 +1,23 @@
-# OOP_Web_Application_Assignment3
+Name: Ashley Fitzgerald
+Student Number: C15406208
+
 Assignment: Create anything we want in any oop language
 
-My creation: Entertainment Tonight 
+My creation: Entertainment Tonight  (Individual project made just by me)
+
+Decription of project: 
+
+I made a website called Entertainment Tonight. This website is designed for people travelling
+to new cities and want to see what events on. The person can search by city and the category they
+want ie. music,comedy, and if an event exists, they can see it! Users can also add their own 
+events. This was intended for people in a city who are lets say in a bar and there is  great
+local band playing, they can make an event and tell people about it. Simple. This website gives
+the user control to post events, which people would not have known about before. The user
+can register,login/logout on the website. This website gives local events promotations as
+users could be anywhere and post about an event! If you've just arrived in a new city and you 
+want to do something tonight  or you are at a great event and want to tell people about it,
+Entertainment Tonight is just what you need! 
+
 
 Language and Platform I used: The oop language is used is PYTHON. I used a python web framwork called Django to build a web appplication called Entertainment Tonight.
 
