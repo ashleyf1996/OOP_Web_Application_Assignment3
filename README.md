@@ -4,7 +4,7 @@
 
 **Youtube video:**
 
- [![Video](http://img.youtube.com/vi/S8SIFTEqghQ/0.jpg)](https://www.youtube.com/watch?v=WIcxGukbzbA&feature=youtu.be)
+ [![Video](https://youtu.be/WIcxGukbzbA.jpg)](hhttps://www.youtube.com/watch?v=GV6mdkRoPiU)
 
 
 **Assignment:** Create anything we want in any oop language
@@ -52,7 +52,7 @@ What is in my website?
 
 	- Fistly, when you go on to my website, you see the home page.
 	- From the home page you can navigate to anyother page on the website.
-	- A user can register, login/logout. 
+	-A user can register, login/logout. 
 	- On the home page, there is text, images and fun fact button for the user to press.
 
 	About us page:
@@ -118,7 +118,7 @@ What is in my website?
 
  3. The TECHNICAL THINGS I am proud of, the things we learn on the course with bryan included 
     CLASSES,OBJECTS,POLYMORPHISM,INHERITANCE AND INTERFACES. All of these elements are in my website
-    and made my website possible. Everything is organised into classes, objects are used to make instances of the classes, my model classes are a subclass of the django superclass MODEL, my view classes are a subclass of the django super class View theses are examples of POLYMORPHISM AND INHERTANCE. 
+    and made my website possible. Everything is organised into classes, objects are used to make instances of the classes, my model classes are a subclass of the django superclass MODEL, my view classes are a subclass of the django super class View theses are examples of POLYMOREPHISM AND INHERTANCE. 
 
  4. I am proud of the APPREANCE of my website. I decided on the colour of purple to be the scheme of
     my website. 
