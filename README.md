@@ -72,6 +72,32 @@ TECHNICAL DESIGN OF MY WEBSITE
 - My code is organised into classes. I created instances of the classes using objects. I used the
   Database to store relevent information (incl; event info, user info)
 
+- The use of objects allowed me create multiple events and users. Objects are prevailent 
+   through out the whole of my website.
+
+- As mentioned before I used python. 
+- Some things i used python for : 
+
+ - To create classes which INHERIT from the model class. Each model in python class the subclassess
+   django.db.models.Model. The model class is source of information about the data contaioned in my website. I had 3 models, Event,Cities and Type. Django has a built
+   in User model. Each model contaions the fields an behaviours about my data. It then maps to the databse to allow me to add data to the fiels.
+
+ - I used python in forms, to irerate through the fields of my model. I did this using loops.
+
+ - I used python to authenticate users and do general error checking.
+
+ - I used it to navigate through pages and redirect the user to different pages
+
+ And much more!
+
+
+ FEATURES IM PROUD OF 
+
+ 1. 
+
+   
+
+
 
 
 
