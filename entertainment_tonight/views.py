@@ -51,7 +51,7 @@ class EventView(View):
 
 
         else:
-            messages.warning(request, "Sorry! Cannoclt find any events matching that criteria. Please try again")
+            messages.warning(request, "Sorry! Cannot find any events matching that criteria. Please try again")
             return redirect('event')
 
 

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dde2c30-e9b4-42aa-9a94-50fbbad00f16" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/about.html" afterPath="$PROJECT_DIR$/templates/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/entertainment_tonight/views.py" afterPath="$PROJECT_DIR$/entertainment_tonight/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/event.html" afterPath="$PROJECT_DIR$/templates/event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +50,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="120">
               <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
               <folding>
                 <element signature="e#689#710#0#HTML" expanded="true" />
@@ -59,8 +62,8 @@
       <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="1484" column="24" lean-forward="false" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
+            <state relative-caret-position="15">
+              <caret line="1269" column="16" lean-forward="false" selection-start-line="1269" selection-start-column="16" selection-end-line="1269" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -78,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -98,22 +101,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entertainment_tonight/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="85" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="85" />
+            <state relative-caret-position="316">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/form.html">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <folding>
+                <element signature="e#421#427#0#HTML" expanded="true" />
+                <element signature="e#427#433#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +127,8 @@
       <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="85">
+              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -152,11 +158,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>box</find>
-      <find>div</find>
       <find>.navbar</find>
       <find>darkr</find>
-      <find>panel</find>
       <find>navb</find>
       <find>text colo</find>
       <find>blackwhi</find>
@@ -182,6 +185,9 @@
       <find>btn-p</find>
       <find>h2</find>
       <find>blockq</find>
+      <find>panel</find>
+      <find>stars</find>
+      <find>sub</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,7 +220,6 @@
         <option value="$PROJECT_DIR$/entertainment_tonight/migrations/0005_auto_20170411_0019.py" />
         <option value="$PROJECT_DIR$/entertainment_tonight/migrations/0006_auto_20170411_1418.py" />
         <option value="$PROJECT_DIR$/oopAssignment3/settings.py" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/category/list_of_post_by_category..html" />
         <option value="$PROJECT_DIR$/templates/list_of_post_by_category..html" />
         <option value="$PROJECT_DIR$/entertainment_tonight/admin.py" />
@@ -228,14 +233,15 @@
         <option value="$PROJECT_DIR$/templates/event_form.html" />
         <option value="$PROJECT_DIR$/entertainment_tonight/models.py" />
         <option value="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/form.py" />
-        <option value="$PROJECT_DIR$/entertainment_tonight/views.py" />
-        <option value="$PROJECT_DIR$/templates/event.html" />
         <option value="$PROJECT_DIR$/templates/form-template.html" />
         <option value="$PROJECT_DIR$/entertainment_tonight/forms.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/header_menu.html" />
-        <option value="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/templates/about.html" />
+        <option value="$PROJECT_DIR$/templates/event.html" />
+        <option value="$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/entertainment_tonight/views.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
       </list>
     </option>
   </component>
@@ -1099,14 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entertainment_tonight/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -1146,14 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1232,25 +1222,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/event.html">
+    <entry file="file://$PROJECT_DIR$/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="1484" column="24" lean-forward="false" selection-start-line="1484" selection-start-column="24" selection-end-line="1484" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="120">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="35" />
           <folding>
             <element signature="e#689#710#0#HTML" expanded="true" />
@@ -1258,11 +1240,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/about.html">
+    <entry file="file://$PROJECT_DIR$/entertainment_tonight/static/entertainment_tonight/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="15">
+          <caret line="1269" column="16" lean-forward="false" selection-start-line="1269" selection-start-column="16" selection-end-line="1269" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entertainment_tonight/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="e#421#427#0#HTML" expanded="true" />
+            <element signature="e#427#433#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
