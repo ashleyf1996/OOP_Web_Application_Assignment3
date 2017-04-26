@@ -6,7 +6,7 @@
 {% block content %}
 
 {% include 'header_menu.html' %}
-    <script>
+    <script xmlns="http://www.w3.org/1999/html">
 function preferedLocation() {
     prefer = document.forms[0].browsers.value;
     alert("Is this location correct: " + prefer);
@@ -16,7 +16,8 @@ function preferedLocation() {
 <body>
 <div class="panel panel-default">
     <div class="panel-body">
-        <h1>Tell use where you are! We want to know what events you have found!</h1>
+       <blockquote><h1>Share with the world an event  that you have found or and event you are hosting!</h1></blockquote>
+        <blockquote><small><font color="red">Please make sure you are registered/logged in before creating the event</font></small></blockquote>
 
 
 
@@ -24,11 +25,11 @@ function preferedLocation() {
         <form action="" method="post" enctype="multipart/form-data">
             <img src="{{event.upload_photo.url}}" class="img-responsive">
         <!-- form is linked to forms.py and loops through the fields of the event model-->
-            <br>{{ form }}<br><br>
-        <br/>
+          <blockquote><br>{{ form }}<br><br></blockquote>
 
 
-            <p><b>Event Type:</b></p>
+
+           <blockquote><p><b>Event Type:</b></p>
             <select name="event_type">
                 {% for type in types %}
                     <option>{{ type.name }}</option>
@@ -39,7 +40,7 @@ function preferedLocation() {
                 {% for city in cities %}
 
                     <option>{{ city.town_name }}</option>
-
+</blockquote>
                 {% endfor %}
             </select><br/><br/>
             <button type="submit" class="btn btn-success">Submit</button>
