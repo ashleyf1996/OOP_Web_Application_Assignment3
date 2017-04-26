@@ -4,7 +4,7 @@
 
 **Youtube video:**
 
- [![Video](https://youtu.be/WIcxGukbzbA.jpg)](hhttps://www.youtube.com/watch?v=GV6mdkRoPiU)
+https://www.youtube.com/watch?v=WIcxGukbzbA&t=76s
 
 
 **Assignment:** Create anything we want in any oop language
