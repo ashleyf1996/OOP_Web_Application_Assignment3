@@ -4,7 +4,7 @@
 
 **Youtube video:**
 
- [![Video](http://img.youtube.com/vi/S8SIFTEqghQ/0.jpg)](hhttps://www.youtube.com/watch?v=GV6mdkRoPiU)
+ [![Video](http://img.youtube.com/vi/S8SIFTEqghQ/0.jpg)](https://www.youtube.com/watch?v=WIcxGukbzbA&feature=youtu.be)
 
 
 **Assignment:** Create anything we want in any oop language
@@ -19,29 +19,16 @@ To use my website : http://138.68.185.108/entertainment_tonight/
 **Decription of project:**
 
 I made a website called Entertainment Tonight. This website is designed for people travelling
-to new cities and want to see what events on. The person can search by city and the category they
-want ie. music,comedy, and if an event exists, they can see it! Users can also add their own 
-events. This was intended for people in a city who are lets say in a bar and there is  great
-local band playing, they can make an event and tell people about it. Simple. This website gives
-the user control to post events, which people would not have known about before. The user
+to new cities and want to see what events are on. The person can search by city and 
+the category they want ie. music,comedy, and if an event exists, they can see it! Users can also add their own events. This was intended for people in a city who are lets say in a bar and there is  great local band playing, they can make an event and tell people about it. Simple. This website gives the user control to post events, which people would not have known about before. The user
 can register,login/logout on the website. This website gives local events promotations as
 users could be anywhere and post about an event! If you've just arrived in a new city and you 
-want to do something tonight  or you are at a great event and want to tell people about it,
+want to do something tonight or you are at a great event and want to tell people about it,
 Entertainment Tonight is just what you need! 
 
 
 Language and Platform I used: The oop language is used is PYTHON. I used a python web framwork called Django to build a web appplication called Entertainment Tonight.
 
-
-
-**CONCEPT**
-
-What was the idea for my website?
-
- 	 The idea of my website is for people going to new cities, are able to see the local events
- 	 posted by users that are on. Example, if someone goes to Paris, the user can see what 
- 	 others have posted about different events that are in. It's targeted for tourists, 
- 	 students and anybody who wants to find out whats on in a given city.
 
 		
 **DESIGN**
@@ -65,7 +52,7 @@ What is in my website?
 
 	- Fistly, when you go on to my website, you see the home page.
 	- From the home page you can navigate to anyother page on the website.
-	-A user can register, login/logout. 
+	- A user can register, login/logout. 
 	- On the home page, there is text, images and fun fact button for the user to press.
 
 	About us page:
@@ -131,7 +118,7 @@ What is in my website?
 
  3. The TECHNICAL THINGS I am proud of, the things we learn on the course with bryan included 
     CLASSES,OBJECTS,POLYMORPHISM,INHERITANCE AND INTERFACES. All of these elements are in my website
-    and made my website possible. Everything is organised into classes, objects are used to make instances of the classes, my model classes are a subclass of the django superclass MODEL, my view classes are a subclass of the django super class View theses are examples of POLYMOREPHISM AND INHERTANCE. 
+    and made my website possible. Everything is organised into classes, objects are used to make instances of the classes, my model classes are a subclass of the django superclass MODEL, my view classes are a subclass of the django super class View theses are examples of POLYMORPHISM AND INHERTANCE. 
 
  4. I am proud of the APPREANCE of my website. I decided on the colour of purple to be the scheme of
     my website. 
