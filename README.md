@@ -4,7 +4,7 @@
 
 **Youtube video:**
 
-[![Video](http://img.youtube.com/vi/S8SIFTEqghQ/0.jpg)](https://www.youtube.com/watch?v=WIcxGukbzbA&t=76s)
+[![Video](http://img.youtube.com/vi/WIcxGukbzbA/0.jpg)](https://www.youtube.com/watch?v=WIcxGukbzbA)
 
 
 
